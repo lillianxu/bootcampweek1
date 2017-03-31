@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -73,17 +73,59 @@ namespace LoopArray
               */
             //Print the largest number from the list.
             int large = 0;
+            int templarge = 0;
                     for (large= 0; large < Number.Length-1; large++)
                     {
-                    if (Number[large] > Number[large + 1])
-                    Number[large + 1] = Number[large];
-            }
-            Console.WriteLine(Number[large]);
+                        if (Number[large] > Number[large + 1])
+                        {
+                            templarge = Number[large];
+                            Number[large] = Number[large + 1];
+                            Number[large + 1] = templarge;
+                        }
+                        else templarge = Number[large + 1];
+                    }
+            Console.WriteLine("The largest number is:{0}",templarge);
 
             //Print the smallest number from the list.
+            int small = 0;
+            int tempSmall = 0;
+            while (small< Number.Length - 1)
+            {
+                if (Number[small] < Number[small + 1])
+                {
+                    tempSmall = Number[small];
+                    Number[small] = Number[small + 1];
+                    Number[small + 1] = tempSmall;
+                }
+                small++;
+            }
+            Console.WriteLine("The smallest number is:{0}", Number[small]);
             //Print the average value from the list of numbers.
-            //Print the numbers from the list using order by descending.
+            int sum = 0;
+            for (int i = 0; i < Number.Length; i++)
+            {
+                sum += Number[i];
+            }
+            Console.WriteLine("The average number is:{0}", sum/Number.Length);
 
+            //Print the numbers from the list using order by descending.
+            int tempOrder = 0;
+            for (int i=0;i<Number.Length;i++)
+             {
+                for(int j=i+1;j<Number.Length;j++)
+                {
+                    if (Number[i] < Number[j])
+                    {
+                        tempOrder = Number[i];
+                        Number[i] = Number[j];
+                        Number[j] = tempOrder;
+                    }
+                }
+             }
+            foreach (int value in Number)
+            {
+                Console.WriteLine("{0}", value);
+            }
             Console.ReadKey();
         }
     }
