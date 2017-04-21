@@ -37,8 +37,9 @@ namespace LoopArray
 
     */
             //Create a list with the following numbers 1, 3, 4 , 5, 6, 7, 8 , 13 , 15
-            int[] Number = { 1, 3, 4, 5, 6, 7, 13, 8, 15 };
-
+           // int[] Number = { 1, 3, 4, 5, 6, 7, 13, 8, 15 };
+            List<int> list = new List<int>() { 1, 3, 4, 5, 6, 7, 8, 13 };
+            list.Add(15);
             // Print a list of numbers to the console
             //for loops
             for(int i=0;i<Number.Length;i++)
