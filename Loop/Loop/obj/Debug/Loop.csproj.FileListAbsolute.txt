@@ -1,0 +1,6 @@
+C:\Users\ping\Documents\Visual Studio 2017\Projects\Loop\Loop\bin\Debug\Loop.exe.config
+C:\Users\ping\Documents\Visual Studio 2017\Projects\Loop\Loop\bin\Debug\Loop.exe
+C:\Users\ping\Documents\Visual Studio 2017\Projects\Loop\Loop\bin\Debug\Loop.pdb
+C:\Users\ping\Documents\Visual Studio 2017\Projects\Loop\Loop\obj\Debug\Loop.csprojResolveAssemblyReference.cache
+C:\Users\ping\Documents\Visual Studio 2017\Projects\Loop\Loop\obj\Debug\Loop.exe
+C:\Users\ping\Documents\Visual Studio 2017\Projects\Loop\Loop\obj\Debug\Loop.pdb
